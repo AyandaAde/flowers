@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
      <div className={`${styles.night}`}/>
-    <div className={`${styles.flowers} mb-10 left-14`}>
+    <div className={`${styles.flowers} mb-20 left-14`}>
       <div className={`${styles.flower} ${styles.flower__1}`}>
         <div className={`${styles.flower__leafs} ${styles.flower__leafs__1}`}>
           <div className={`${styles.flower__leaf} ${styles.flower__leaf__1}`} />
