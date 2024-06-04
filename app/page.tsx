@@ -12,6 +12,8 @@ export default function Home() {
     }, 1000);
   });
   return (
+    <>
+     <div className={`${styles.night}`}/>
     <div className={`${styles.flowers} mb-10 left-14`}>
       <div className={`${styles.flower} ${styles.flower__1}`}>
         <div className={`${styles.flower__leafs} ${styles.flower__leafs__1}`}>
@@ -460,5 +462,6 @@ export default function Home() {
       </div>
       <p className="text-white relative right-10 top-5">© Made by <Link href={"https://ayanda.vercel.app/"} className="underline">Ayanda Kinyambo</Link></p>
     </div>
+    </>
   );
 }
