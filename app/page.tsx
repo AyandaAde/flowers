@@ -1,113 +1,464 @@
-import Image from "next/image";
+"use client";
+
+import { useEffect } from "react";
+import styles from "@/app/scss/main.module.scss";
+import Link from "next/link";
 
 export default function Home() {
+  useEffect(() => {
+    const c = setTimeout(() => {
+      document.body.classList.remove("not-loaded");
+      clearTimeout(c);
+    }, 1000);
+  });
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className={`${styles.flowers} mb-10 left-14`}>
+      <div className={`${styles.flower} ${styles.flower__1}`}>
+        <div className={`${styles.flower__leafs} ${styles.flower__leafs__1}`}>
+          <div className={`${styles.flower__leaf} ${styles.flower__leaf__1}`} />
+          <div className={`${styles.flower__leaf} ${styles.flower__leaf__2}`} />
+          <div className={`${styles.flower__leaf} ${styles.flower__leaf__3}`} />
+          <div className={`${styles.flower__leaf} ${styles.flower__leaf__4}`} />
+          <div className={`${styles.flower__white_circle}`} />
+
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__1}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__2}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__3}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__4}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__5}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__6}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__7}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__8}`}
+          />
+        </div>
+        <div className={`${styles.flower__line}`}>
+          <div
+            className={`${styles.flower__line__leaf} ${styles.flower__line__leaf__1}`}
+          />
+          <div
+            className={`${styles.flower__line__leaf} ${styles.flower__line__leaf__2}`}
+          />
+          <div
+            className={`${styles.flower__line__leaf} ${styles.flower__line__leaf__3}`}
+          />
+          <div
+            className={`${styles.flower__line__leaf} ${styles.flower__line__leaf__4}`}
+          />
+          <div
+            className={`${styles.flower__line__leaf} ${styles.flower__line__leaf__5}`}
+          />
+          <div
+            className={`${styles.flower__line__leaf} ${styles.flower__line__leaf__6}`}
+          />
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className={`${styles.flower} ${styles.flower__2}`}>
+        <div className={`${styles.flower__leafs} ${styles.flower__leafs__2}`}>
+          <div className={`${styles.flower__leaf} ${styles.flower__leaf__1}`} />
+          <div className={`${styles.flower__leaf} ${styles.flower__leaf__2}`} />
+          <div className={`${styles.flower__leaf} ${styles.flower__leaf__3}`} />
+          <div className={`${styles.flower__leaf} ${styles.flower__leaf__4}`} />
+          <div className={`${styles.flower__white_circle}`} />
+
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__1}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__2}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__3}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__4}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__5}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__6}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__7}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__8}`}
+          />
+        </div>
+        <div className={`${styles.flower__line}`}>
+          <div
+            className={`${styles.flower__line__leaf} ${styles.flower__line__leaf__1}`}
+          />
+          <div
+            className={`${styles.flower__line__leaf} ${styles.flower__line__leaf__2}`}
+          />
+          <div
+            className={`${styles.flower__line__leaf} ${styles.flower__line__leaf__3}`}
+          />
+          <div
+            className={`${styles.flower__line__leaf} ${styles.flower__line__leaf__4}`}
+          />
+        </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <div className={`${styles.flower} ${styles.flower__3}`}>
+        <div className={`${styles.flower__leafs} ${styles.flower__leafs__3}`}>
+          <div className={`${styles.flower__leaf} ${styles.flower__leaf__1}`} />
+          <div className={`${styles.flower__leaf} ${styles.flower__leaf__2}`} />
+          <div className={`${styles.flower__leaf} ${styles.flower__leaf__3}`} />
+          <div className={`${styles.flower__leaf} ${styles.flower__leaf__4}`} />
+          <div className={`${styles.flower__white_circle}`} />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__1}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__2}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__3}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__4}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__5}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__6}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__7}`}
+          />
+          <div
+            className={`${styles.flower__light} ${styles.flower__light__8}`}
+          />
+        </div>
+        <div className={`${styles.flower__line}`}>
+          <div
+            className={`${styles.flower__line__leaf} ${styles.flower__line__leaf__1}`}
+          />
+          <div
+            className={`${styles.flower__line__leaf} ${styles.flower__line__leaf__2}`}
+          />
+          <div
+            className={`${styles.flower__line__leaf} ${styles.flower__line__leaf__3}`}
+          />
+          <div
+            className={`${styles.flower__line__leaf} ${styles.flower__line__leaf__4}`}
+          />
+        </div>
       </div>
-    </main>
+
+      <div className={`${styles.grow_ans} duration-1200`}>
+        <div className={`${styles.flower__g_long}`}>
+          <div className={`${styles.flower__g_long__top}`} />
+          <div className={`${styles.flower__g_long__bottom}`} />
+        </div>
+      </div>
+
+      <div className={`${styles.growing_grass}`}>
+        <div className={`${styles.flower__grass} ${styles.flower__grass__1}`}>
+          <div className={`${styles.flower__grass__top}`} />
+          <div className={`${styles.flower__grass__bottom}`} />
+          <div
+            className={`${styles.flower__grass__leaf} ${styles.flower__grass__leaf__1}`}
+          />
+          <div
+            className={`${styles.flower__grass__leaf} ${styles.flower__grass__leaf__2}`}
+          />
+          <div
+            className={`${styles.flower__grass__leaf} ${styles.flower__grass__leaf__3}`}
+          />
+          <div
+            className={`${styles.flower__grass__leaf} ${styles.flower__grass__leaf__4}`}
+          />
+          <div
+            className={`${styles.flower__grass__leaf} ${styles.flower__grass__leaf__5}`}
+          />
+          <div
+            className={`${styles.flower__grass__leaf} ${styles.flower__grass__leaf__6}`}
+          />
+          <div
+            className={`${styles.flower__grass__leaf} ${styles.flower__grass__leaf__7}`}
+          />
+          <div
+            className={`${styles.flower__grass__leaf} ${styles.flower__grass__leaf__8}`}
+          />
+          <div className={`${styles.flower__grass__overlay}`} />
+        </div>
+      </div>
+
+      <div className={`${styles.growing_grass}`}>
+        <div className={`${styles.flower__grass} ${styles.flower__grass__2}`}>
+          <div className={`${styles.flower__grass__top}`} />
+          <div className={`${styles.flower__grass__bottom}`} />
+          <div
+            className={`${styles.flower__grass__leaf} ${styles.flower__grass__leaf__1}`}
+          />
+          <div
+            className={`${styles.flower__grass__leaf} ${styles.flower__grass__leaf__2}`}
+          />
+          <div
+            className={`${styles.flower__grass__leaf} ${styles.flower__grass__leaf__3}`}
+          />
+          <div
+            className={`${styles.flower__grass__leaf} ${styles.flower__grass__leaf__4}`}
+          />
+          <div
+            className={`${styles.flower__grass__leaf} ${styles.flower__grass__leaf__5}`}
+          />
+          <div
+            className={`${styles.flower__grass__leaf} ${styles.flower__grass__leaf__6}`}
+          />
+          <div
+            className={`${styles.flower__grass__leaf} ${styles.flower__grass__leaf__7}`}
+          />
+          <div
+            className={`${styles.flower__grass__leaf} ${styles.flower__grass__leaf__8}`}
+          />
+          <div className={`${styles.flower__grass__overlay}`} />
+        </div>
+      </div>
+
+      <div className={`${styles.grow_ans} duration-2400`}>
+        <div
+          className={`${styles.flower__g_right} ${styles.flower__g_right__1}`}
+        >
+          <div className={`${styles.leaf}`} />
+        </div>
+      </div>
+
+      <div className={`${styles.grow_ans} duration-2800`}>
+        <div
+          className={`${styles.flower__g_right} ${styles.flower__g_right__2}`}
+        >
+          <div className={`${styles.leaf}`} />
+        </div>
+      </div>
+
+      <div className={`${styles.grow_ans} duration-2800`}>
+        <div className={`${styles.flower__g_front}`}>
+          <div
+            className={`${styles.flower__g_front__leaf_wrapper} ${styles.flower__g_front__leaf_wrapper__1}`}
+          >
+            <div className={`${styles.flower__g_front__leaf}`} />
+          </div>
+          <div
+            className={`${styles.flower__g_front__leaf_wrapper} ${styles.flower__g_front__leaf_wrapper__2}`}
+          >
+            <div className={`${styles.flower__g_front__leaf}`} />
+          </div>
+          <div
+            className={`${styles.flower__g_front__leaf_wrapper} ${styles.flower__g_front__leaf_wrapper__3}`}
+          >
+            <div className={`${styles.flower__g_front__leaf}`} />
+          </div>
+          <div
+            className={`${styles.flower__g_front__leaf_wrapper} ${styles.flower__g_front__leaf_wrapper__4}`}
+          >
+            <div className={`${styles.flower__g_front__leaf}`} />
+          </div>
+          <div
+            className={`${styles.flower__g_front__leaf_wrapper} ${styles.flower__g_front__leaf_wrapper__5}`}
+          >
+            <div className={`${styles.flower__g_front__leaf}`} />
+          </div>
+          <div
+            className={`${styles.flower__g_front__leaf_wrapper} ${styles.flower__g_front__leaf_wrapper__6}`}
+          >
+            <div className={`${styles.flower__g_front__leaf}`} />
+          </div>
+          <div
+            className={`${styles.flower__g_front__leaf_wrapper} ${styles.flower__g_front__leaf_wrapper__7}`}
+          >
+            <div className={`${styles.flower__g_front__leaf}`} />
+          </div>
+          <div
+            className={`${styles.flower__g_front__leaf_wrapper} ${styles.flower__g_front__leaf_wrapper__8}`}
+          >
+            <div className={`${styles.flower__g_front__leaf}`} />
+          </div>
+          <div className={`${styles.flower__g_front__line}`} />
+        </div>
+      </div>
+
+      <div className={`${styles.grow_ans} duration-3200`}>
+        <div className={`${styles.flower__g_fr}`}>
+          <div className={`${styles.leaf}`} />
+          <div
+            className={`${styles.flower__g_fr__leaf} ${styles.flower__g_fr__leaf__1}`}
+          />
+          <div
+            className={`${styles.flower__g_fr__leaf} ${styles.flower__g_fr__leaf__2}`}
+          />
+          <div
+            className={`${styles.flower__g_fr__leaf} ${styles.flower__g_fr__leaf__3}`}
+          />
+          <div
+            className={`${styles.flower__g_fr__leaf} ${styles.flower__g_fr__leaf__4}`}
+          />
+          <div
+            className={`${styles.flower__g_fr__leaf} ${styles.flower__g_fr__leaf__5}`}
+          />
+          <div
+            className={`${styles.flower__g_fr__leaf} ${styles.flower__g_fr__leaf__6}`}
+          />
+          <div
+            className={`${styles.flower__g_fr__leaf} ${styles.flower__g_fr__leaf__7}`}
+          />
+          <div
+            className={`${styles.flower__g_fr__leaf} ${styles.flower__g_fr__leaf__8}`}
+          />
+        </div>
+      </div>
+
+      <div className={`${styles.long_g} ${styles.long_g__0}`}>
+        <div className={`${styles.grow_ans} duration-3000`}>
+          {" "}
+          <div className={`${styles.leaf} ${styles.leaf__0}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-2200`}>
+          <div className={`${styles.leaf} ${styles.leaf__1}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-3400`}>
+          <div className={`${styles.leaf} ${styles.leaf__2}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-3600`}>
+          <div className={`${styles.leaf} ${styles.leaf__3}`}/>
+        </div>
+      </div>
+
+      <div className="long-g long-g__1">
+        <div className={`${styles.grow_ans} duration-3600`}>
+          <div className={`${styles.leaf} ${styles.leaf__0}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-3800`}>
+          <div className={`${styles.leaf} ${styles.leaf__1}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-4000`}>
+          {" "}
+          <div className={`${styles.leaf} ${styles.leaf__2}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-4200`}>
+          <div className={`${styles.leaf} ${styles.leaf__3}`}/>
+        </div>
+      </div>
+
+      <div className="long-g long-g__2">
+        <div className={`${styles.grow_ans} duration-4000`}>
+          {" "}
+          <div className={`${styles.leaf} ${styles.leaf__0}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-4200`}>
+          <div className={`${styles.leaf} ${styles.leaf__1}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-4400`}>
+          <div className={`${styles.leaf} ${styles.leaf__2}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-4600`}>
+          <div className={`${styles.leaf} ${styles.leaf__3}`}/>
+        </div>
+      </div>
+
+      <div className="long-g long-g__3">
+        <div className={`${styles.grow_ans} duration-4000`}>
+          {" "}
+          <div className={`${styles.leaf} ${styles.leaf__0}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-4200`}>
+          <div className={`${styles.leaf} ${styles.leaf__1}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-3000`}>
+          {" "}
+          <div className={`${styles.leaf} ${styles.leaf__2}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-3600`}>
+          <div className={`${styles.leaf} ${styles.leaf__3}`}/>
+        </div>
+      </div>
+
+      <div className="long-g long-g__4">
+        <div className={`${styles.grow_ans} duration-4000`}>
+          {" "}
+          <div className={`${styles.leaf} ${styles.leaf__0}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-4200`}>
+          <div className={`${styles.leaf} ${styles.leaf__1}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-3000`}>
+          {" "}
+          <div className={`${styles.leaf} ${styles.leaf__2}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-3600`}>
+          <div className={`${styles.leaf} ${styles.leaf__3}`}/>
+        </div>
+      </div>
+
+      <div className="long-g long-g__5">
+        <div className={`${styles.grow_ans} duration-4000`}>
+          {" "}
+          <div className={`${styles.leaf} ${styles.leaf__0}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-4200`}>
+          <div className={`${styles.leaf} ${styles.leaf__1}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-3000`}>
+          {" "}
+          <div className={`${styles.leaf} ${styles.leaf__2}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-3600`}>
+          <div className={`${styles.leaf} ${styles.leaf__3}`}/>
+        </div>
+      </div>
+
+      <div className="long-g long-g__6">
+        <div className={`${styles.grow_ans} duration-4200`}>
+          <div className={`${styles.leaf} ${styles.leaf__0}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-4400`}>
+          <div className={`${styles.leaf} ${styles.leaf__1}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-4600`}>
+          <div className={`${styles.leaf} ${styles.leaf__2}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-4800`}>
+          <div className={`${styles.leaf} ${styles.leaf__3}`} />
+        </div>
+      </div>
+
+      <div className="long-g long-g__7">
+        <div className={`${styles.grow_ans} duration-3000`}>
+          {" "}
+          <div className={`${styles.leaf} ${styles.leaf__0}`} />
+        </div>
+        <div className={`${styles.grow_ans} duration-3200`}>
+          <div className={`${styles.leaf} ${styles.leaf__1}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-3500`}>
+          <div className={`${styles.leaf} ${styles.leaf__2}`}/>
+        </div>
+        <div className={`${styles.grow_ans} duration-3600`}>
+          <div className={`${styles.leaf} ${styles.leaf__3}`}/>
+        </div>
+      </div>
+      <p className="text-white relative right-10 top-5">© Made by <Link href={"https://ayanda.vercel.app/"} className="underline">Ayanda Kinyambo</Link></p>
+    </div>
   );
 }
